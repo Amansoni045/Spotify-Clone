@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
-/* body{
-    /* background-color: black;
+
+body{
+    background-color: black;
     color: white; 
-}    */
+}   
     
 .left{
     width: 25vw;
-    padding: 21px;
+    padding: 10px;
 }
 
 .right{
@@ -19,11 +22,104 @@
 .home ul li{
     display: flex;
     gap: 15px;
-    width: 34px;
+    width: 15px;
     list-style: none;
+    padding-top: 14px;
+    font-family: 'Poppins', sans-serif;
 }
 
+.heading{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    padding-top: 14px;
+    padding: 23px 14px;
+    align-items: center;
+    font-size: 13px;
+}
 
+.heading img{
+    width: 30px;
+}
+
+.library{
+    min-height: 80vh;
+    position:relative;
+}
+
+.footer{
+    display: flex;
+    font-size: 10px;
+    color: grey;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    flex-wrap: wrap;
+}
+
+#foot{
+    color: grey;
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+}
+
+.header > *{
+    padding: 20px;
+}
+
+.spotify-playlists{
+    padding: 16px;
+}
+
+.card-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.spotify-playlists .card{
+    width: 200px;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover{
+    background-color: #252525;
+    cursor: pointer;
+
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.play-button {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;  
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    transform: scale(0.8) 0.3s ease; 
+}
+
+.card:hover .play-button{
+    opacity: 1;
+    transform: scale(1);
+}
 
 
 
